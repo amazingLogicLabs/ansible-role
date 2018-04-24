@@ -1,2 +1,12 @@
+---
+
+- hosts:
+    - all
+  vars: 
+    - name: Hussain
+    - language: ansible
   tasks:
     - action: ping
+    
+- debug:
+    msg: "System {{ name }} has uuid {{ language }}"
