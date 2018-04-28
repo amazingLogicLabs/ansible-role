@@ -12,5 +12,5 @@
     shell: /tmp/test.sh >> /tmp/somelog.txt creates=/tmp/somelog.txt
   - name: ensure apache is at the java version
     yum:
-      name: java
+      name: java-1.8.0-openjdk-devel
       state: latest  
