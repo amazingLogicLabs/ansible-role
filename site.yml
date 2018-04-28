@@ -14,3 +14,7 @@
     yum:
       name: java-1.7.0-openjdk
       state: latest  
+  - name: upgrade all packages
+    yum:
+      name: '*'
+      state: latest
