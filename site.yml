@@ -7,8 +7,10 @@
   tasks:
   - name: ensure apache is at the latest version
     command: sh /tmp/test.sh
-    
-  tasks:
+  - name: ensure apache is at the latest version
+    yum:
+      name: httpd
+      state: latest  
   - name: make sure apache is running
     service:
       name: httpd
