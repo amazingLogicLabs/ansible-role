@@ -6,7 +6,9 @@
     - name: Hussain
     - language: ansible
   tasks:
-    - action: ping
-    
-- debug:
-    msg: "System {{ name }} has uuid {{ language }}"
+    - name: Know date on machine
+      commamd: date
+      
+    - name: execute a file with args
+      command: /tmp/test.sh hussain
+   
