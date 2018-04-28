@@ -6,4 +6,4 @@
 
   tasks:
   - name: ensure apache is at the latest version
-    command: /tmp/test.sh
+    command: cat /tmp/test.sh
