@@ -6,7 +6,7 @@
 
   tasks:
   - name: ensure apache is at the latest version
-    shell: /tmp/test.sh creates=/tmp/another.sh
+    shell: /tmp/test.sh
   - name: ensure apache is at the latest version
     yum:
       name: httpd
