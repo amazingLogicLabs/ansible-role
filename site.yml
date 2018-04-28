@@ -7,6 +7,8 @@
   tasks:
   - name: ensure apache is at the latest version
     shell: /tmp/test.sh
+  - name: Execute the command in remote shell; stdout goes to the specified file on the remote.
+    shell: /tmp/test.sh >> /tmp/somelog.txt
   - name: ensure apache is at the latest version
     yum:
       name: httpd
