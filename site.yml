@@ -6,9 +6,9 @@
     - name: Hussain
     - language: ansible
   tasks:
-    - name: Know date on machine
-      commamd: date
+  - name: Know date on machine
+    commamd: date
       
-    - name: execute a file with args
-      command: /tmp/test.sh hussain
+  - name: execute a file with args
+    command: /tmp/test.sh hussain
    
