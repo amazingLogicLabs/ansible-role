@@ -3,8 +3,8 @@
 - hosts:
     - all
   vars: 
-    - name: Hussain
-    - language: ansible
+    name: Hussain
+    language: ansible
   tasks:
   - name: Know date on machine
     commamd: date
