@@ -1,13 +1,9 @@
 ---
-
 - hosts: all
-  vars: 
-    name: Hussain
-    language: ansible
+  vars:
+    http_port: 80
+    max_clients: 200
+
   tasks:
-  - name: Know date on machine
-    commamd: date
-      
-  - name: execute a file with args
-    command: /tmp/test.sh hussain
-   
+  - name: ensure apache is at the latest version
+    command: date
