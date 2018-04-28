@@ -9,11 +9,7 @@
     shell: /tmp/test.sh {{max_clients}} >> /tmp/tesh.log
   - name: Execute the command in remote shell; stdout goes to the specified file on the remote.
     shell: /tmp/test.sh >> /tmp/somelog.txt creates=/tmp/somelog.txt
-  - name: ensure apache is at the latest version
+  - name: ensure apache is at the java version
     yum:
-      name: httpd
+      name: java
       state: latest  
-  - name: make sure apache is running
-    service:
-      name: httpd
-      state: started
